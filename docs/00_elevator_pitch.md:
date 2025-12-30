@@ -1,0 +1,3 @@
+# 45-second pitch
+
+I built a Salesforce grants lifecycle mini app to demonstrate enterprise architecture patterns. It includes a normalized data model for programs, grants, applications, reviews, awards, disbursements, and compliance artifacts; guardrails via validation rules; lifecycle automation via record-triggered flows; and executive reporting for pipeline and funding KPIs. I also designed a security model aligned to least privilege and an integration strategy using API-led connectivity patterns appropriate for middleware like MuleSoft, with reliability considerations such as idempotency and error handling.
