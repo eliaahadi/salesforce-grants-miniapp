@@ -86,3 +86,31 @@ sequenceDiagram
   end
 ```
 
+
+
+# Architecture
+
+## Goal
+Reduce time-to-triage and improve resolution consistency for applicant support cases while maintaining privacy, auditability, and scalability.
+
+## Core components
+- Channels: phone/email/portal/in-person
+- Salesforce Service Cloud:
+  - Case as system of engagement
+  - Queues + assignment rules (Omni-Channel optional)
+  - Knowledge + macros/quick text for consistent responses
+  - Reporting dashboards for operational metrics
+
+## Integration layer (future)
+- Loan/Grants system of record (application status, eligibility decisions)
+- Document management (uploads, retention)
+- Identity provider (SSO/MFA)
+- Analytics/warehouse (enterprise metrics)
+
+## Observability and operations
+- Error queues for integration failures
+- Runbooks for replay/triage
+- Monitoring: backlog, failure rate, time-to-resolution
+
+## Diagram
+See docs/diagrams/architecture.mmd (export as PNG for screenshots)

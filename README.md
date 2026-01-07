@@ -34,3 +34,32 @@ This mirrors common public-sector CRM/grants modernization needs:
 - Custom objects + standard objects (Account, Contact)
 - Salesforce Flow (record-triggered)
 - Reports and dashboards
+
+
+# Applicant support console (Salesforce Service Cloud) — portfolio project
+
+A Service Cloud console built to support high-volume applicant inquiries (eligibility, documentation, portal issues, application status).
+Demonstrates enterprise patterns: triage, routing, SLA-oriented workflows, privacy controls, agent productivity tooling, reporting, and integration design.
+
+## What’s included
+- Case lifecycle and routing (queues + assignment rules; Omni-Channel optional)
+- Data model and triage fields aligned to reporting and auditability
+- Security model (least privilege, record access, field-level security)
+- Agent productivity (case page layout, quick text/macros, suggested next steps)
+- Reporting dashboard (backlog, time-to-resolution, top issue types, escalation rate)
+- Integration design (API-led patterns to loan/grants system, docs, identity, analytics)
+- Optional code: Apex Invocable triage + LWC Applicant 360 component
+
+## Why this project
+This mirrors applicant support workflows used in public-sector programs (e.g., farm loans / grants):
+- consistent responses, audit trail, and controlled access to sensitive applicant info
+- clear operational visibility (queues/backlog/SLA) and reliable escalation paths
+
+## Demo steps (3 minutes)
+1) Create a Case with Issue Type + Severity
+2) Observe assignment to the correct queue
+3) Move case through lifecycle statuses and capture resolution
+4) Show dashboard metrics and trend view
+
+## Artifacts
+Start here: docs/02_architecture.md and docs/09_demo_script.md
